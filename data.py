@@ -26,8 +26,8 @@ def resize_and_save_images(source_folder, destination_folder, target_size):
             
 
 if __name__ == "__main__":
-    source_folder_path = 'Assign02/Facades/A/train'
-    destination_folder_path = 'Assign03/train_images'
+    source_folder_path = 'folder/to/A/train'
+    destination_folder_path = 'train_images'
 
     target_size = (64, 64)
 

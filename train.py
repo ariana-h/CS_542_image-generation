@@ -18,7 +18,7 @@ class TrainingConfig:
     train_batch_size = 16
     eval_batch_size = 16
     mixed_precision = "fp16"
-    output_dir = "Assign03/gen_model"
+    output_dir = "gen_model"
     gradient_accumulation_steps = 1
     start_epoch = 0
     total_epochs = 100
@@ -57,7 +57,7 @@ def main():
         transforms.ToTensor(),
     ])
 
-    dataset = ImageDataset('Assign03/train_images', transform=transform)
+    dataset = ImageDataset('train_images', transform=transform)
     
     dataloader = DataLoader(dataset,
                             batch_size=config.train_batch_size,
