@@ -1,31 +1,29 @@
 import os
 import cv2
-import numpy as np
 import torch
 from torch.utils.data import DataLoader, Dataset
 from diffusers import UNet2DModel, DDPMScheduler, DDPMPipeline
-from diffusers.utils import make_image_grid, pt_to_pil
+from diffusers.utils import make_image_grid
 from dataclasses import dataclass
 from transformers import get_cosine_schedule_with_warmup
 import tqdm
 from accelerate import Accelerator, notebook_launcher
 from torchvision import transforms
-from diffusers.utils import pt_to_pil
 
 @dataclass
 class TrainingConfig:
-    image_size = 64
+    image_size = 32
     train_batch_size = 16
     eval_batch_size = 16
     mixed_precision = "fp16"
     output_dir = "gen_model"
     gradient_accumulation_steps = 1
     start_epoch = 0
-    total_epochs = 100
+    total_epochs = 400
     learning_rate = 1e-4
     lr_warmup_steps = 500
-    save_image_epochs = 10
-    save_model_epochs = 20
+    save_image_epochs = 5
+    save_model_epochs = 5
     overwrite_output_dir = True
     seed = 0
 

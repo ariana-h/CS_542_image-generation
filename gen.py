@@ -8,7 +8,7 @@ import os
 
 @dataclass
 class GenConfig:
-    image_size = 64
+    image_size = 32
     model_dir = "gen_model"
     output_dir = "gen_images"
     seed = 0
@@ -59,7 +59,7 @@ def main():
         unet=model,
         scheduler=noise_scheduler)
    
-    for i in range(1000):
+    for i in range(500):
         evaluateEpoch(config, i, pipeline)
 
 def evaluateEpoch(config, epoch, pipeline):

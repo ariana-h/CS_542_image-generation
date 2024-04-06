@@ -2,7 +2,6 @@ import cv2
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 import os
-from torchvision import transforms
 
 
 def resize_and_save_images(source_folder, destination_folder, target_size):
@@ -26,9 +25,9 @@ def resize_and_save_images(source_folder, destination_folder, target_size):
             
 
 if __name__ == "__main__":
-    source_folder_path = 'folder/to/A/train'
+    source_folder_path = 'img_align_celeba'
     destination_folder_path = 'train_images'
 
-    target_size = (64, 64)
+    target_size = (32, 32)
 
     resize_and_save_images(source_folder_path, destination_folder_path, target_size)

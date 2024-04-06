@@ -1,9 +1,4 @@
 import torch_fidelity as torf
-from torch.utils.data import Dataset
-import os
-from torchvision import transforms
-import torch
-import cv2
 
 def main():
     metrics = torf.calculate_metrics(
