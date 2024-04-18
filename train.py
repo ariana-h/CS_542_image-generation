@@ -1,3 +1,6 @@
+# Referenced: https://huggingface.co/docs/accelerate/en/index
+#             https://pypi.org/project/diffusers/0.2.1/
+
 import os
 import cv2
 import torch
@@ -12,7 +15,7 @@ from torchvision import transforms
 
 @dataclass
 class TrainingConfig:
-    image_size = 32
+    image_size = 64
     train_batch_size = 16
     eval_batch_size = 16
     mixed_precision = "fp16"

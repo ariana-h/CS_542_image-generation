@@ -1,4 +1,6 @@
-img_align_celeba
-train_images
-gen_model
+img_align_celeba/
+train_images/
+gen_model/
+gen_images/
+preliminary.ipynb
 

@@ -16,4 +16,4 @@ https://www.kaggle.com/datasets/jessicali9530/celeba-dataset
 **Dependencies**
 1. Use a Conda environment with Python 3.10. In version 3.11 of Python, the Cuda version of pytorch is unable to be installed, only the CPU version. A machine with an NVIDIA GPU is recommended. 
 2. To install pytorch-cuda in an environment using Python 3.10, run the following command: `conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia`.
-3. Install additional dependencies as needed. These may include `pip install opencv-python`, `pip install diffusers`, `pip install transformers`, and `pip install accelerate`. 
+3. Install additional dependencies as needed. These may include `pip install opencv-python`, `pip install diffusers`, `pip install transformers`, `pip install accelerate`, and `pip install torch-fidelity`. 

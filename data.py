@@ -1,3 +1,5 @@
+# Used dataset from: https://www.kaggle.com/datasets/jessicali9530/celeba-dataset 
+
 import cv2
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -28,6 +30,6 @@ if __name__ == "__main__":
     source_folder_path = 'img_align_celeba'
     destination_folder_path = 'train_images'
 
-    target_size = (32, 32)
+    target_size = (64, 64)
 
     resize_and_save_images(source_folder_path, destination_folder_path, target_size)

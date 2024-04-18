@@ -1,3 +1,5 @@
+# Referenced: https://arxiv.org/abs/2206.10935
+
 import torch_fidelity as torf
 
 def main():
@@ -6,7 +8,7 @@ def main():
         input2="train_images",
         fid=True,
         kid=True,
-        kid_subset_size=25, # Just doing this for expediency 200,
+        kid_subset_size=25,
         cuda=True)
     print(metrics)
 

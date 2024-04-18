@@ -1,3 +1,5 @@
+# Referenced: https://github.com/PrimarchOfTheSpaceWolves/CS_548_12/blob/main/BasicGenTraining.py
+
 import torch
 from dataclasses import dataclass
 from diffusers import DDPMPipeline
@@ -8,7 +10,7 @@ import os
 
 @dataclass
 class GenConfig:
-    image_size = 32
+    image_size = 64
     model_dir = "gen_model"
     output_dir = "gen_images"
     seed = 0
