@@ -21,13 +21,12 @@ def resize_and_save_images(source_folder, destination_folder, target_size):
 
         if image is not None:
             resized_image = cv2.resize(image, target_size)
-            image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
             cv2.imwrite(destination_path, resized_image)
             
 
 if __name__ == "__main__":
-    source_folder_path = 'img_align_celeba'
+    source_folder_path = 'flowers/black_eyed_susan' # 'img_align_celeba'
     destination_folder_path = 'train_images'
 
     target_size = (64, 64)
