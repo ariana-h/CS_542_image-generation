@@ -1,4 +1,5 @@
-# Used dataset from: https://www.kaggle.com/datasets/jessicali9530/celeba-dataset 
+# Used dataset from: https://www.kaggle.com/datasets/l3llff/flowers?resource=download 
+# and https://www.kaggle.com/datasets/jessicali9530/celeba-dataset 
 
 import cv2
 import ssl
